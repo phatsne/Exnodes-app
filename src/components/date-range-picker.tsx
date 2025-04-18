@@ -18,8 +18,8 @@ export function DatePickerWithRange({
     className,
 }: React.HTMLAttributes<HTMLDivElement>) {
     const [date, setDate] = React.useState<DateRange | undefined>({
-        from: new Date(2023, 5, 13), // 13 June 2023
-        to: new Date(2023, 6, 14),   // 14 July 2023
+        from: new Date(2023, 5, 13),
+        to: new Date(2023, 6, 14),
     })
 
     return (

@@ -4,6 +4,7 @@
       "id": "1",
       "username": "trieucuongphat@gmail.com",
       "password": "Dev@123456",
+      "OPT": "060423",
       "role": "admin"
     }
   ],
@@ -14,7 +15,7 @@
       "email": "nguyenngocminhtam@gmail.com",
       "phone": "0901400932",
       "dateOfBirth": "2003-04-06",
-      "permanent_residence": "HCM",
+      "permanent_residence": "HCM", 
       "temporary_residence": "245 lo D chung cu An Quang ",
       "company_email": "nguyenngocminhtam@exnodes.vn",
       "line_manager": "Danny Trần",

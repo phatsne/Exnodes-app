@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 interface EmailFormProps {
-    goToNextStep: (nextStep: "enterOTP", email: string) => void;
+    goToNextStep: (nextStep: "enterOTP", email: string, otpCode: string) => void;
 }
 
 export const EmailForm = ({ goToNextStep }: EmailFormProps) => {
@@ -14,8 +14,15 @@ export const EmailForm = ({ goToNextStep }: EmailFormProps) => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
         const email = formData.get("email") as string;
+
+        // Tạo mã OTP ngẫu nhiên (6 chữ số)
+        const otpCode = Math.floor(100000 + Math.random() * 900000).toString();
+
+        // In ra console để test demo (giả sử là gửi mail)
+        console.log("OTP Code đã gửi đến email:", otpCode);
+
         setTimeout(() => {
-            goToNextStep("enterOTP", email);
+            goToNextStep("enterOTP", email, otpCode);
         }, 1000);
     };
 

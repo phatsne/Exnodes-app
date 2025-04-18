@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Lock, Eye, EyeSlash } from "@phosphor-icons/react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -10,9 +10,30 @@ interface ResetPasswordFormProps {
     code: string;
 }
 
-export const ResetPasswordForm = ({ }: ResetPasswordFormProps) => {
+interface User {
+    id: string;
+    username: string;
+    password: string;
+    role: string;
+}
+
+export const ResetPasswordForm = ({ email }: ResetPasswordFormProps) => {
     const [showPassword, setShowPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+    const [users, setUsers] = useState<User[]>([]);
+
+    useEffect(() => {
+        const dummyUsers: User[] = [
+            {
+                id: "1",
+                username: "trieucuongphat@gmail.com",
+                password: "Dev@123456",
+                role: "admin",
+            },
+        ];
+        setUsers(dummyUsers);
+        console.log("Dummy users:", dummyUsers);
+    }, []);
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -24,8 +45,27 @@ export const ResetPasswordForm = ({ }: ResetPasswordFormProps) => {
             alert("Passwords do not match");
             return;
         }
+
+        // Cập nhật mật khẩu của user
+        const updatedUsers = users.map(user => {
+            if (user.username === email) {
+                return { ...user, password };
+            }
+            return user;
+        });
+
+        localStorage.setItem("users", JSON.stringify(updatedUsers));
+
+        console.log("Updated users:", updatedUsers);
+        const updatedUser = updatedUsers.find(user => user.username === email);
+        if (updatedUser) {
+            console.log(`New password for ${updatedUser.username}:`, updatedUser.password);
+        }
+
+        alert("Password has been changed successfully!");
+
         setTimeout(() => {
-            window.location.href = "/pages/login";
+            window.location.href = "/";
         }, 1000);
     };
 
@@ -34,6 +74,8 @@ export const ResetPasswordForm = ({ }: ResetPasswordFormProps) => {
             <p className="text-sm text-[#A1A1AA] text-center">
                 Setup your new password.
             </p>
+
+            {/* Password Field */}
             <div className="relative w-full">
                 <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#F2F2F2]" size={20} />
                 <Input
@@ -52,6 +94,7 @@ export const ResetPasswordForm = ({ }: ResetPasswordFormProps) => {
                 </button>
             </div>
 
+            {/* Confirm Password Field */}
             <div className="relative w-full">
                 <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#F2F2F2]" size={20} />
                 <Input
