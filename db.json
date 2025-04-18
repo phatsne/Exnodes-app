@@ -1,0 +1,239 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "trieucuongphat@gmail.com",
+      "password": "Dev@123456",
+      "role": "admin"
+    }
+  ],
+  "employees": [
+    {
+      "id": "3",
+      "name": "Nguyễn Ngọc Minh Tâm",
+      "email": "nguyenngocminhtam@gmail.com",
+      "phone": "0901400932",
+      "dateOfBirth": "2003-04-06",
+      "permanent_residence": "HCM",
+      "temporary_residence": "245 lo D chung cu An Quang ",
+      "company_email": "nguyenngocminhtam@exnodes.vn",
+      "line_manager": "Danny Trần",
+      "department": "IT",
+      "position": "FE",
+      "contractType": "Full-time",
+      "contractDate": "2025-04-06",
+      "startDate": "2025-04-06"
+    },
+    {
+      "id": "4",
+      "name": "Triệu Cường Phát",
+      "email": "trieucuongphat@gmail.com",
+      "phone": "0901400932",
+      "dateOfBirth": "2003-04-06",
+      "permanent_residence": "HN",
+      "temporary_residence": "245 lo D chung cu An Quang ",
+      "company_email": "phatit2003@exnodes.vn",
+      "line_manager": "Manager 1",
+      "department": "IT",
+      "position": "BE",
+      "contractType": "Full-time",
+      "contractDate": "2025-04-06",
+      "startDate": "2022-06-04"
+    },
+    {
+      "id": "5",
+      "first_name": "Tam",
+      "last_name": "Nguyen",
+      "email": "trieucuongphat@gmail.com",
+      "phone": "0901400932",
+      "dateOfBirth": "2003-02-02",
+      "permanent_residence": "HCM",
+      "temporary_residence": "245 lo D chung cu An Quang ",
+      "company_email": "nguyenngocminhtam@exnodes.vn",
+      "line_manager": "Manager 1",
+      "department": "HR",
+      "position": "FE",
+      "contractType": "Full-time",
+      "contractDate": "2020-02-02"
+    },
+    {
+      "id": "6",
+      "name": "Phạm Xuân Định",
+      "email": "trieucuongphat@gmail.com",
+      "phone": "0901400932",
+      "dateOfBirth": "2003-04-06",
+      "permanent_residence": "245 lo D chung cu An Quang ",
+      "temporary_residence": "245 lo D chung cu An Quang ",
+      "company_email": "phatsneit2003@exnodes.vn",
+      "line_manager": "Manager 1",
+      "department": "IT",
+      "position": "FE",
+      "contractType": "Full-time",
+      "contractDate": "2025-04-06",
+      "startDate": "2020-03-02"
+    },
+    {
+      "id": "7",
+      "first_name": "Anh ",
+      "last_name": "Nguyen",
+      "email": "trieucuongphat@gmail.com",
+      "phone": "0901400932",
+      "dateOfBirth": "2000-12-05",
+      "permanent_residence": "DN",
+      "temporary_residence": "245 lo D chung cu An Quang ",
+      "company_email": "phatgalam20gg@exnodes.vn",
+      "line_manager": "Manager 1",
+      "department": "IT",
+      "position": "BE",
+      "contractType": "Full-time",
+      "contractDate": "2020-02-22"
+    },
+    {
+      "id": "8",
+      "first_name": "Anh ",
+      "last_name": "Nguyen",
+      "email": "trieucuongphat@gmail.com",
+      "phone": "0901400932",
+      "dateOfBirth": "2000-12-05",
+      "permanent_residence": "DN",
+      "temporary_residence": "245 lo D chung cu An Quang ",
+      "company_email": "phatgalam20gg@exnodes.vn",
+      "line_manager": "Manager 1",
+      "department": "IT",
+      "position": "BE",
+      "contractType": "Full-time",
+      "contractDate": "2020-02-22"
+    }
+  ],
+  "checkInOuts": [
+    {
+      "id": "1",
+      "employeeCode": "362345",
+      "name": "Phạm Xuân Định",
+      "position": "FE Leader",
+      "department": "Frontend",
+      "day": "Monday",
+      "date": "February 29, 2024",
+      "checkIn": "09:00 am",
+      "checkOut": "05:30 pm",
+      "late": 0,
+      "early": 1
+    },
+    {
+      "id": "2",
+      "employeeCode": "362346",
+      "name": "Nguyễn Trung Tấn",
+      "position": "BE Leader",
+      "department": "Backend",
+      "day": "Monday",
+      "date": "February 29, 2024",
+      "checkIn": "09:00 am",
+      "checkOut": "05:30 pm",
+      "late": 0,
+      "early": 0
+    },
+    {
+      "id": "3",
+      "employeeCode": "362347",
+      "name": "Nguyễn Ngọc Minh Tâm",
+      "position": "UI/UX Designer",
+      "department": "Design",
+      "day": "Monday",
+      "date": "February 29, 2024",
+      "checkIn": "08:30 am",
+      "checkOut": "05:30 pm",
+      "late": 0,
+      "early": 0
+    },
+    {
+      "id": "4",
+      "employeeCode": "362348",
+      "name": "Nguyễn Trung Tấn",
+      "position": "BE Leader",
+      "department": "Backend",
+      "day": "Monday",
+      "date": "February 29, 2024",
+      "checkIn": "09:15 am",
+      "checkOut": "04:30 pm",
+      "late": 1,
+      "early": 1
+    },
+    {
+      "id": "5",
+      "employeeCode": "362349",
+      "name": "Triệu Cường Phát",
+      "position": "Developer",
+      "department": "Frontend",
+      "day": "Monday",
+      "date": "February 29, 2024",
+      "checkIn": "08:45 am",
+      "checkOut": "05:45 pm",
+      "late": 0,
+      "early": 0
+    }
+  ],
+  "leave-applications": [
+    {
+      "id": "123456",
+      "name": "Trần Quốc Huy",
+      "position": "FE Leader",
+      "department": "Frontend",
+      "submissionDate": "March 15, 2024",
+      "leaveType": "Annual Leave",
+      "status": "Approved",
+      "duration": "Mar 16 - Mar 17, 2024",
+      "dayOff": "1"
+    },
+    {
+      "id": "234567",
+      "name": "Phạm Xuân Định",
+      "position": "UI/UX Designer",
+      "department": "Design",
+      "submissionDate": "March 15, 2024",
+      "leaveType": "Annual Leave",
+      "status": "Approved",
+      "duration": "Mar 16 - Mar 17, 2024",
+      "dayOff": "1"
+    }
+  ],
+  "departments": [
+    {
+      "id": "1",
+      "name": "Frontend"
+    },
+    {
+      "id": "2",
+      "name": "Backend"
+    },
+    {
+      "id": "3",
+      "name": "Design"
+    },
+    {
+      "id": "4",
+      "name": "Testing"
+    }
+  ],
+  "positions": [
+    {
+      "id": "1",
+      "name": "FE Leader"
+    },
+    {
+      "id": "2",
+      "name": "BE Leader"
+    },
+    {
+      "id": "3",
+      "name": "Developer"
+    },
+    {
+      "id": "4",
+      "name": "UI/UX Designer"
+    },
+    {
+      "id": "5",
+      "name": "Business Analyst"
+    }
+  ]
+}
